@@ -14,29 +14,29 @@
         <h1><strong>Weather Forcast</strong> - iGiv0</h1>
     </div>
     
-    <div class="container row col-sm-4">
-         <h4 class="citysearch">Search for a City</h4>
-
-             <div class="input"> 
-                <input type="text" class="form" id='search-city'/>
-                    <div type="text-append">
-                        <button class="btn bg-primary" type="button" id="search-button">Search</button>
-                        <button class="btn bg-secondary" type="button" id="clear-button">clear</button>
-                        </div>
+    <div class="container">
+        <div class="row"> 
+            <div class="col-md-4">
+                <h4 class="citysearch">Search for a City</h4>
+                <div class="input" id="form"> 
+                   <input type="text" class="form" id='search-city'/>
+                       <div type="text-append">
+                           <button class="btn bg-primary" type="submit" id="search-button">Search</button>
+                           <button class="btn bg-secondary" type="button" id="clear-button">clear</button>
+                           <ul class="unorderedlist" id="group-lists" >
+                    
+                           </ul>
+                       </div>
                     </div>
-                <ul class="unorderedlist" >
-
-                </ul>
-            </div> 
-            <div class="col-sm-12" id="current-condition">
-                <div class="row ml-2 border-dark rounded" >
-                    <h4 class="cityname mb-2 mt-1" id="current-City"</h4>
-                    <p>Current Temperature: <span class="current" id="current-temp"></span></p>
-                    <p>Current Humidity: <span class="current" id="current-humidity"></span></p>
-                    <p>Current Wind Speed: <span class="current" id="curren-twind"></span></p>
-                    </div>
-                </div>
             </div>
+            <div class="col-md-8" id="current-condition">
+                <h4 class="cityname mb-2 mt-1" id="current-City"></h4>
+                <p>Current Temperature: <span class="current" id="current-temp"></span></p>
+                <p>Current Humidity: <span class="current" id="current-humidity"></span></p>
+                <p>Current Wind Speed: <span class="current" id="curren-twind"></span></p>
+
+            </div>
+        </div>
 
             <div class="col-sm-12" id="future-condition" 
                 <h2><strong>5 Day Forcast</strong></h2>
